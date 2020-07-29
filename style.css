@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  cursor: pointer;
+  padding: 4px;
+  outline: none;
+}
+
+.container {
+  display: flex;
+}
+
+.flox {
+  margin: 5px;
+}
+
+.open {
+  font-size: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.emoji {
+  font-family: sans-serif
+}
+
+.floxs {
+  color: #00bfa5;
+}
+
+.modal {
+  display: none;
+  background: #f1f1f1;
+  width: 410px;
+  height: 270px;
+  overflow: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in;
+}
+
+.modal::-webkit-scrollbar {
+  width: 0px;
+}
+
+.h {
+  position: relative;
+  display: inline-block;
+}
+
+/* .h .hh {
+  display: none;
+  position: absolute;
+  background-color: inherit;
+  margin-top: 2px;
+  padding: 5px;
+  overflow: scroll;
+  font-size: 12px;
+  min-width: auto;
+  border-radius: 5px;
+  height: auto;
+} */
+
+/* .h .hh::-webkit-scrollbar {
+  width: 0px;
+} */
+
+.h:hover .hh {
+  display: inline-flex;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+  right: 0;
+  padding: 5px;
+  color: white;
+}
+
+.det {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  width: inherit;
+  margin-bottom: 10px;
+  font-size: 12px;
+  position: fixed;
+}
+
+/* .imgs {
+  height: 180px;
+  width: 180px;
+  flex-wrap: wrap;
+  margin: 1px;
+  padding: 2px;
+  background: transparent;
+  cursor: pointer;
+} */
+
+.img {
+  height: 75px;
+  width: 75px;
+  flex-wrap: wrap;
+  margin: 1px;
+  padding: 1px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.det .header_list {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.det .header_list h2 {
+  margin: 0 10px;
+}
+
+.modal .emoji_dislay {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
+  margin: 2px;
+  background: transparent;
+  margin-top: 2rem;
+  padding: 0 5px;
+}
+
+.modal .emoji_dislay h2 {
+  text-align: center;
+}
+
+h2:hover {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  outline: none;
+}
